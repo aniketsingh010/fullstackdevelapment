@@ -1,0 +1,9 @@
+tailwind cc =>
+tailwind css is framework of html,cs,js.
+
+extra small ->less then 576px
+small-> 576px se 767px
+medium -> 768px se 992px
+large ->992px se 1200px
+extra large->1200px se 1400px
+extra  extra large->greater then 1400px

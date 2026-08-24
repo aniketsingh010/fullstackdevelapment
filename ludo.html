@@ -1,0 +1,1232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #outer {
+            height: 1000px;
+            width: 1000px;
+            background-color: aliceblue;
+        }
+
+        #one {
+            height: 400px;
+            width: 1000px;
+            background-color: white;
+        }
+
+        #two {
+            height: 200px;
+            width: 1000px;
+            background-color: green;
+        }
+
+        #three {
+            height: 400px;
+            width: 1000px;
+            background-color: yellow;
+        }
+
+        #c1 {
+            height: 398px;
+            width: 398px;
+            background-color: green;
+            border: 1px solid black;
+            float: left;
+        }
+
+        #c2 {
+            height: 400px;
+            width: 200px;
+            background-color: white;
+
+            float: left;
+        }
+
+        #c3 {
+            height: 398px;
+            width: 398px;
+            background-color: green;
+            border: 1px solid black;
+            float: left;
+        }
+
+        #d1 {
+            height: 200px;
+            width: 400px;
+            background-color: aqua;
+            float: left;
+        }
+
+        #d2 {
+            height: 198px;
+            width: 198px;
+            background-color: aqua;
+            border: 1px solid black;
+            float: left;
+        }
+
+        #d3 {
+            height: 200px;
+            width: 400px;
+            background-color: aqua;
+            float: right;
+        }
+
+        #e1 {
+            height: 398px;
+            width: 398px;
+            background-color: blue;
+            border: 1px solid black;
+            float: left;
+        }
+
+        #e2 {
+            height: 400px;
+            width: 200px;
+            background-color: white;
+
+            float: left;
+        }
+
+        #e3 {
+            height: 398px;
+            width: 398px;
+            background-color: yellow;
+            border: 1px solid black;
+            float: left;
+        }
+
+        #c2r1 {
+            height: 398px;
+            width: 64.6px;
+            border: 1px solid black;
+            float: left;
+        }
+
+        #c2r2 {
+            height: 398px;
+            width: 64.6px;
+            border: 1px solid black;
+            float: left;
+        }
+
+        #c2r3 {
+            height: 398px;
+            width: 64.6px;
+            border: 1px solid black;
+            float: left;
+        }
+
+        #c1r1 {
+            height: 100px;
+            width: 400px;
+            background-color: red;
+        }
+
+        #c1r2 {
+            height: 200px;
+            width: 400px;
+            background-color: white;
+        }
+
+        #c1r3 {
+            height: 100px;
+            width: 400px;
+            background-color: red;
+        }
+
+        #ca1 {
+            height: 200px;
+            width: 50px;
+            background-color: red;
+            float: left;
+        }
+
+        #ca2 {
+            height: 200px;
+            width: 300px;
+            background-color: white;
+            float: left;
+        }
+
+        #ca3 {
+            height: 200px;
+            width: 50px;
+            background-color: red;
+            float: right;
+        }
+
+        #w1 {
+            height: 40px;
+            width: 300px;
+            background-color: darkblue;
+        }
+
+        #w2 {
+            height: 40px;
+            width: 300px;
+            background-color: white;
+        }
+
+        #w3 {
+            height: 40px;
+            width: 300px;
+            background-color: white;
+        }
+
+        #w4 {
+            height: 40px;
+            width: 300px;
+            background-color: white;
+        }
+
+        #w5 {
+            height: 40px;
+            width: 300px;
+            background-color: darkblue;
+        }
+
+        #q1 {
+            height: 40px;
+            width: 34.4px;
+            background-color: white;
+            float: left;
+        }
+
+        #q2 {
+            height: 40px;
+            width: 39px;
+            background-color: red;
+            border: 1px solid black;
+            float: left;
+        }
+
+        #q3 {
+            height: 40px;
+            width: 150px;
+            background-color: white;
+            float: left;
+        }
+
+        #q4 {
+            height: 40px;
+            width: 39px;
+            background-color: red;
+            border: 1px solid black;
+            float: left;
+        }
+
+        #q5 {
+            height: 40px;
+            width: 34.4px;
+            background-color: white;
+            float: left;
+        }
+
+        #t1 {
+            height: 66px;
+            width: 64px;
+            border: 1px solid black;
+            float: left;
+        }
+
+        #t2 {
+            height: 66px;
+            width: 64px;
+            border: 1px solid black;
+            float: left;
+        }
+
+        #t3 {
+            height: 66px;
+            width: 64px;
+            border: 1px solid black;
+            float: left;
+        }
+
+        #t4 {
+            height: 66px;
+            width: 64px;
+            border: 1px solid black;
+            float: left;
+        }
+
+        #t5 {
+            height: 66px;
+            width: 64px;
+            border: 1px solid black;
+            float: left;
+        }
+
+        #t6 {
+            height: 66px;
+            width: 64px;
+            border: 1px solid black;
+            float: left;
+        }
+
+        #tt1 {
+            height: 66px;
+            width: 64px;
+            border: 1px solid black;
+            float: left;
+        }
+
+        #tt2 {
+            height: 66px;
+            width: 64px;
+            border: 1px solid black;
+            background-color: green;
+            float: left;
+        }
+
+        #tt3 {
+            height: 66px;
+            width: 64px;
+            border: 1px solid black;
+            background-color: green;
+            float: left;
+        }
+
+        #tt4 {
+            height: 66px;
+            width: 64px;
+            border: 1px solid black;
+            background-color: green;
+            float: left;
+        }
+
+        #tt5 {
+            height: 66px;
+            width: 64px;
+            border: 1px solid black;
+            background-color: green;
+            float: left;
+        }
+
+        #tt6 {
+            height: 66px;
+            width: 64px;
+            border: 1px solid black;
+            background-color: green;
+            float: left;
+        }
+
+        #ttt1 {
+            height: 66px;
+            width: 64px;
+            border: 1px solid black;
+            float: left;
+        }
+
+        #ttt2 {
+            height: 66px;
+            width: 64px;
+            border: 1px solid black;
+            float: left;
+        }
+
+        #ttt3 {
+            height: 66px;
+            width: 64px;
+            border: 1px solid black;
+            float: left;
+        }
+
+        #ttt4 {
+            height: 66px;
+            width: 64px;
+            border: 1px solid black;
+            float: left;
+        }
+
+        #ttt5 {
+            height: 66px;
+            width: 64px;
+            border: 1px solid black;
+            float: left;
+        }
+
+        #ttt6 {
+            height: 66px;
+            width: 64px;
+            border: 1px solid black;
+            float: left;
+        }
+
+        #l1 {
+            height: 100px;
+            width: 399.6px;
+            background-color: green;
+        }
+
+        #l2 {
+            height: 200px;
+            width: 399.6px;
+            background-color: white;
+        }
+
+        #l3 {
+            height: 200px;
+            width: 399.6px;
+            background-color: green;
+        }
+
+        #ll1 {
+            height: 200px;
+            width: 50px;
+            background-color: green;
+            float: left;
+        }
+
+        #ll2 {
+            height: 200px;
+            width: 299.6px;
+            background-color: white;
+            float: left;
+        }
+
+        #ll3 {
+            height: 200px;
+            width: 50px;
+            background-color: green;
+            float: left;
+        }
+
+        #p1 {
+            height: 33.3px;
+            width: 299.6px;
+            background-color: white;
+        }
+
+        #p2 {
+            height: 33.3px;
+            width: 299.6px;
+            background-color: white;
+        }
+
+        #p3 {
+            height: 33.3px;
+            width: 299.6px;
+            background-color: white;
+        }
+
+        #p4 {
+            height: 33.3px;
+            width: 299.6px;
+            background-color:white;
+        }
+
+        #p5 {
+            height: 33.3px;
+            width: 299.6px;
+            background-color: white;
+        }
+
+        #p6 {
+            height: 33.3px;
+            width: 299.6px;
+            background-color: white;
+        }
+
+        #i1 {
+            height: 33.3px;
+            width: 34.4px;
+            background-color: white;
+            float: left;
+        }
+
+        #i2 {
+            height: 33.3px;
+            width: 34.4px;
+            background-color: green;
+            border: 1px solid black;
+            float: left;
+        }
+
+        #i3 {
+            height: 33.3px;
+            width: 158.8px;
+            background-color: white;
+            float: left;
+        }
+
+        #i4 {
+            height: 33.3px;
+            width: 34.4px;
+            background-color: green;
+            border: 1px solid black;
+            float: left;
+        }
+
+        #i5 {
+            height: 33.3px;
+            width: 34.4px;
+            background-color: white;
+            float: left;
+        }
+
+        #z1 {
+            height: 65px;
+            width: 400px;
+            background-color: white;
+            border: 1px solid black;
+        }
+
+        #z2 {
+            height: 65px;
+            width: 400px;
+            background-color: white;
+            border: 1px solid black;
+        }
+
+        #z3 {
+            height: 65px;
+            width: 400px;
+            background-color: white;
+            border: 1px solid black;
+        }
+
+        #o1 {
+            height: 65px;
+            width: 65px;
+            background-color: white;
+            border: 1px solid black;
+            float: left;
+
+        }
+
+        #o2 {
+            height: 65px;
+            width: 65px;
+            background-color: red;
+            border: 1px solid black;
+            float: left;
+
+        }
+
+        #o3 {
+            height: 65px;
+            width: 65px;
+            background-color: white;
+            border: 1px solid black;
+            float: left;
+
+        }
+
+        #o4 {
+            height: 65px;
+            width: 65px;
+            background-color: white;
+            border: 1px solid black;
+            float: left;
+
+        }
+
+        #o5 {
+            height: 65px;
+            width: 65px;
+            background-color: white;
+            border: 1px solid black;
+            float: left;
+
+        }
+
+        #o6 {
+            height: 65px;
+            width: 65px;
+            background-color: white;
+            border: 1px solid black;
+            float: left;
+
+        }
+
+
+        #o111 {
+            height: 65px;
+            width: 65px;
+            background-color: white;
+            border: 1px solid black;
+            float: left;
+
+        }
+
+        #o222 {
+            height: 65px;
+            width: 65px;
+            background-color: red;
+            border: 1px solid black;
+            float: left;
+
+        }
+
+        #o333 {
+            height: 65px;
+            width: 65px;
+            background-color: red;
+            border: 1px solid black;
+            float: left;
+
+        }
+
+        #o444 {
+            height: 65px;
+            width: 65px;
+            background-color: red;
+            border: 1px solid black;
+            float: left;
+
+        }
+
+        #o555 {
+            height: 65px;
+            width: 65px;
+            background-color: red;
+            border: 1px solid black;
+            float: left;
+
+        }
+
+        #o666 {
+            height: 65px;
+            width: 65px;
+            background-color: red;
+            border: 1px solid black;
+            float: left;
+
+        }
+
+        #o11 {
+            height: 65px;
+            width: 65px;
+            background-color: white;
+            border: 1px solid black;
+            float: left;
+
+        }
+
+        #o22 {
+            height: 65px;
+            width: 65px;
+            background-color: white;
+            border: 1px solid black;
+            float: left;
+
+        }
+
+        #o33 {
+            height: 65px;
+            width: 65px;
+            background-color: white;
+            border: 1px solid black;
+            float: left;
+
+        }
+
+        #o44 {
+            height: 65px;
+            width: 65px;
+            background-color: white;
+            border: 1px solid black;
+            float: left;
+
+        }
+
+        #o55 {
+            height: 65px;
+            width: 65px;
+            background-color: white;
+            border: 1px solid black;
+            float: left;
+
+        }
+
+        #o66 {
+            height: 65px;
+            width: 65px;
+            background-color: white;
+            border: 1px solid black;
+            float: left;
+
+        }
+
+        #aa1 {
+            height: 66.6px;
+            width: 400px;
+            background-color: black;
+        }
+
+        #aa2 {
+            height: 66.6px;
+            width: 400px;
+            background-color: black;
+        }
+
+        #aa3 {
+            height: 66.6px;
+            width: 400px;
+            background-color: black;
+        }
+
+        #u1 {
+            height: 65px;
+            width: 65px;
+            background-color: white;
+            border: 1px solid black;
+            float: left;
+        }
+
+        #u2 {
+            height: 65px;
+            width: 65px;
+            background-color: white;
+            border: 1px solid black;
+            float: left;
+        }
+
+        #u3 {
+            height: 65px;
+            width: 65px;
+            background-color: white;
+            border: 1px solid black;
+            float: left;
+        }
+
+        #u4 {
+            height: 65px;
+            width: 65px;
+            background-color: white;
+            border: 1px solid black;
+            float: left;
+        }
+
+        #u5 {
+            height: 65px;
+            width: 65px;
+            background-color: white;
+            border: 1px solid black;
+            float: left;
+        }
+
+        #u6 {
+            height: 65px;
+            width: 65px;
+            background-color: white;
+            border: 1px solid black;
+            float: left;
+        }
+
+        #k1 {
+            height: 100px;
+            width: 400px;
+            background-color: blue;
+        }
+
+        #k2 {
+            height: 200px;
+            width: 400px;
+            background-color: red;
+        }
+
+        #k3 {
+            height: 100px;
+            width: 400px;
+            background-color: blue;
+        }
+
+        #k11 {
+            height: 200px;
+            width: 50px;
+            background-color: blue;
+            float: left;
+        }
+
+        #k12 {
+            height: 200px;
+            width: 300px;
+            background-color: white;
+            float: left;
+        }
+
+        #k13 {
+            height: 200px;
+            width: 49px;
+            background-color: blue;
+            float: left;
+        }
+
+        #F1 {
+            height: 40PX;
+            width: 300px;
+            background-color: white;
+        }
+
+        #F2 {
+            height: 40PX;
+            width: 300px;
+            background-color:white;
+        }
+
+        #F3 {
+            height: 40PX;
+            width: 300px;
+            background-color: white;
+        }
+
+        #F4 {
+            height: 40PX;
+            width: 300px;
+            background-color: white;
+        }
+
+        #F5 {
+            height: 40PX;
+            width: 300px;
+            background-color: white;
+        }
+
+        #row1 {
+            height: 40px;
+            width: 35px;
+            background-color: white;
+            float: left;
+        }
+
+        #row2 {
+            height: 40px;
+            width: 41px;
+            background-color: blue;
+            border: 1px solid black;
+            float: left;
+
+        }
+
+        #row3 {
+            height: 40px;
+            width: 150px;
+            background-color: white;
+            float: left;
+
+        }
+
+        #row4 {
+            height: 40px;
+            width: 41px;
+            background-color: blue;
+            border: 1px solid black;
+            float: left;
+        }
+
+        #row5 {
+            height: 40px;
+            width: 29.8px;
+            background-color: white;
+
+            float: left;
+
+        }
+
+        #as1 {
+            height: 400px;
+            width: 66.6px;
+            background-color: red;
+            float: left;
+        }
+
+        #as2 {
+            height: 400px;
+            width: 66.6px;
+            background-color: darkblue;
+            float: left;
+        }
+
+        #as3 {
+            height: 400px;
+            width: 66.6px;
+            background-color: darkgoldenrod;
+            float: left;
+        }
+        #az1{
+            height: 65px;
+            width: 65px;
+            background-color:white;
+            border: 1px solid black;
+        }
+        #ay1{
+            height: 100px;
+            width: 399.6px;
+            background-color: red;
+        }
+        #ay2{
+            height: 200px;
+            width: 399.6px;
+            background-color:darkblue;
+        }
+        #ay1{
+            height: 100px;
+            width: 399.6px;
+            background-color: darkgoldenrod;
+        }
+        #ss1{
+             height: 200px;
+            width: 50px;
+            background-color: yellow;
+            float: left;
+
+        } 
+         #ss2{
+             height: 200px;
+            width: 300px;
+            background-color:white;
+            float: left;
+
+        } 
+         #ss3{
+             height: 200px;
+            width: 49.5px;
+            background-color: red;
+            float: left;
+
+        } 
+        #ass1{
+            height: 40px;
+            width: 300px;
+            background-color: blanchedalmond;
+        }
+         #ass2{
+            height: 40px;
+            width: 300px;
+            background-color:white;
+        }
+           #ass3{
+            height: 40px;
+            width: 300px;
+            background-color:darkblue;
+        }
+        
+          #ass5{
+            height: 40px;
+            width: 300px;
+            background-color:darkgreen;
+        }
+        #kl1{
+             height: 40px;
+            width: 35px;
+            background-color:white;
+            float: left;
+
+        }
+         #kl2{
+             height: 40px;
+            width: 35px;
+            background-color:yellow;
+            border: 1px solid black;
+            float: left;
+
+        }
+          #kl3{
+             height: 40px;
+            width: 156.5px;
+            background-color:white;
+            float: left;
+
+        }
+          #kl4{
+             height: 40px;
+            width: 35px;
+            background-color:yellow;
+            border: 1px solid black;
+            float: left;
+
+        } 
+        #kl5{
+             height: 40px;
+            width: 35px;
+            background-color:white;
+            float: left;
+
+        }
+        #hg1{
+             height: 40px;
+            width: 35px;
+            background-color:white;
+            float: left;
+
+        }
+         #hg2{
+             height: 41.6px;
+            width: 36.6px;
+            background-color:yellow;
+            border: 1px solid black;
+            float: left;
+
+        }
+         #hg3{
+             height: 40px;
+            width: 156.5px;
+            background-color:white;
+            float: left;
+
+        }
+         #hg4{
+             height: 41.6px;
+            width: 36.6px;
+            background-color:yellow;
+            border: 1px solid black;
+            float: left;
+
+        }
+        #hg5{
+             height: 40px;
+            width: 32px;
+            background-color:white;
+            float: right;
+
+        }
+
+
+      
+    </style>
+</head>
+
+<body>
+    <div id="outer">
+        <div id="one">
+            <div id="c1">
+                <div id="c1r1"></div>
+                <div id="c1r2">
+
+                    <!--  -->
+                    <div id="ca1"></div>
+                    <div id="ca2">
+                        <div id="w1" style="background-color: white;"></div>
+                        <div id="w2">
+                            <div id="q1" style="border-radius: 30px;"></div>
+                            <div id="q2" style="border-radius: 30px;"></div>
+                            <div id="q3" style="border-radius: 30px;"></div>
+                            <div id="q4" style="border-radius: 30px;"></div>
+                            <div id="q5" style="border-radius: 30px;"></div>
+                        </div>
+                        <div id="w3" style="background-color: white;"></div>
+                        <div id="w4">
+                            <div id="q1" style="border-radius: 30px;"></div>
+                            <div id="q2" style="border-radius: 30px;"></div>
+                            <div id="q3" style="border-radius: 30px;"></div>
+                            <div id="q4" style="border-radius: 30px;"></div>
+                            <div id="q5" style="border-radius: 30px;"></div>
+                        </div>
+                        <div id="w5" style="background-color: white;"></div>
+
+
+                    </div>
+                    <div id="ca3"></div>
+
+                </div>
+                <div id="c1r3"></div>
+            </div>
+            <div id="c2">
+                <div id="c2r1">
+                    <div id="t1"></div>
+                    <div id="t2"></div>
+                    <div id="t3"></div>
+                    <div id="t4"></div>
+                    <div id="t5"></div>
+                    <div id="t6"></div>
+                </div>
+                <div id="c2r2">
+                    <div id="tt1"></div>
+                    <div id="tt2"></div>
+                    <div id="tt3"></div>
+                    <div id="tt4"></div>
+                    <div id="tt5"></div>
+                    <div id="tt6"></div>
+                </div>
+                <div id="c2r3">
+                    <div id="ttt1"></div>
+                    <div id="ttt2" style="background-color: green;"></div>
+                    <div id="ttt3"></div>
+                    <div id="ttt4"></div>
+                    <div id="ttt5"></div>
+                    <div id="ttt6"></div>
+                </div>
+            </div>
+            <div id="c3">
+                <div id="l1"></div>
+                <div id="l2">
+                    <div id="ll1"></div>
+                    <div id="ll2">
+                        <div id="p1"></div>
+                        <div id="p2">
+                            <div id="i1"></div>
+                            <div id="i2" style="border-radius: 30px;"></div>
+                            <div id="i3"></div>
+                            <div id="i4" style="border-radius: 30px;"></div>
+                            <div id="i5"></div>
+                        </div>
+                        <div id="p3"></div>
+                        <div id="p4">
+                            <div id="i1"></div>
+                            <div id="i2" style="border-radius: 30px;"></div>
+                            <div id="i3"></div>
+                            <div id="i4" style="border-radius: 30px;"></div>
+                            <div id="i5"></div>
+                        </div>
+                        <div id="p5"></div>
+                        <div id="p6"></div>
+                    </div>
+                    <div id="ll3"></div>
+                </div>
+                <div id="l3"></div>
+            </div>
+        </div>
+        <div id="two">
+            <div id="d1">
+                <div id="z1">
+                    <div id="o1"></div>
+                    <div id="o2"></div>
+                    <div id="o3"></div>
+                    <div id="o4"></div>
+                    <div id="o5"></div>
+                    <div id="o6"></div>
+                </div>
+                <div id="z2">
+                    <div id="o111"> </div>
+                    <div id="o222"></div>
+                    <div id="o333"></div>
+                    <div id="o444"></div>
+                    <div id="o555"></div>
+                    <div id="o666"></div>
+                </div>
+                <div id="z3">
+                    <div id="o11"></div>
+                    <div id="o22"></div>
+                    <div id="o33"></div>
+                    <div id="o44"> <h1>&#8592;</h1></div>
+                    <div id="o55"></div>
+                    <div id="o66"></div>
+                </div>
+            </div>
+            <div id="d2">
+                <img src="https://th.bing.com/th/id/OIP.O7ipWtjJSwmI_oHT2Ab3XAHaHa?w=176&h=180&c=7&r=0&o=7&dpr=1.4&pid=1.7&rm=3" style="height: 199px; width: 199px;" alt="">
+                 </div>
+            <div id="d3">
+                <div id="aa1">
+                    <div id="u1"></div>
+                    <div id="u2"></div>
+                    <div id="u3"></div>
+                    <div id="u4"></div>
+                    <div id="u5"></div>
+                    <div id="u6"></div>
+                </div>
+                <div id="aa2">
+                    <div id="u1" style="background-color: yellow;"></div>
+                    <div id="u2" style="background-color: yellow;"></div>
+                    <div id="u3" style="background-color: yellow;"> <h1>&#8592;</h1></div>
+                    <div id="u4" style="background-color: yellow;"></div>
+                    <div id="u5" style="background-color: yellow;"></div>
+                    <div id="u6"></div>
+                </div>
+                <div id="aa3">
+                    <div id="u1"></div>
+                    <div id="u2"><h1>&#8592;</h1> </div>
+                    <div id="u3"></div>
+                    <div id="u4"></div>
+                    <div id="u5" style="background-color: yellow;"></div>
+                    <div id="u6"></div>
+                </div>
+            </div>
+        </div>
+        <div id="three">
+            <div id="e1">
+                <div id="k1"></div>
+                <div id="k2">
+                    <div id="k11"></div>
+                    <div id="k12">
+                        <div id="F1"></div>
+                        <div id="F2">
+                            <div id="row1" style="border-radius: 30px;"></div>
+                            <div id="row2" style="border-radius: 30px;"></div>
+                            <div id="row3" style="border-radius: 30px;"></div>
+                            <div id="row4" style="border-radius: 30px;"></div>
+                            <div id="row5"style="border-radius: 30px;" ></div>
+
+                        </div>
+                        <div id="F3"></div>
+                        <div id="F4">
+                            <div id="row1" style="border-radius: 30px;"></div>
+                            <div id="row2" style="border-radius: 30px;"></div>
+                            <div id="row3" style="border-radius: 30px;"></div>
+                            <div id="row4" style="border-radius: 30px;"></div>
+                            <div id="row5"></div>
+                        </div>
+                        <div id="F5"></div>
+                    </div>
+                    <div id="k13"></div>
+
+                </div>
+                <div id="k3"></div>
+            </div>
+            <div id="e2">
+                <div id="as1">
+                    <div id="az1"></div>
+                    <div id="az1"></div>
+                    <div id="az1"></div>
+                    <div id="az1"></div>
+                    <div id="az1" style="background-color: blue;"></div>
+                    <div id="az1"></div>
+                </div>
+                <div id="as2">
+                     <div id="az1" style="background-color:blue;"></div>
+                    <div id="az1" style="background-color: blue;"></div>
+                    <div id="az1" style="background-color: blue;"></div>
+                    <div id="az1" style="background-color: blue;"></div>
+                    <div id="az1" style="background-color: blue;"></div>
+                    <div id="az1"></div>
+
+                </div>
+                <div id="as3">
+                     <div id="az1"></div>
+                    <div id="az1"></div>
+                    <div id="az1"></div>
+                    <div id="az1"></div>
+                    <div id="az1"></div>
+                    <div id="az1"></div>
+                </div>
+            </div>
+            <div id="e3">
+                  <div id="ay1" style="background-color: yellow;"></div>
+                   <div id="ay2">
+                    <div id="ss1" style="background-color: yellow;"></div>
+                     <div id="ss2">
+                        <div id="ass1" style="background-color: white;"></div>
+                          <div id="ass2">
+                            <div id="kl1"></div>
+                                <div id="kl2"  style="border-radius: 30px;"></div>
+                                    <div id="kl3"></div>
+                                        <div id="kl4"  style="border-radius: 30px;"></div>
+                                            <div id="kl5"></div>
+                          </div>
+                            <div id="ass3" style="background-color: white;"></div>
+                              <div id="ass4">
+                                <div id="hg1"></div>
+                                 <div id="hg2"  style="border-radius: 30px;"></div>
+                                  <div id="hg3"></div>
+                                   <div id="hg4"  style="border-radius: 30px;"></div>
+                                    <div id="hg5"></div>
+                              </div>
+                                <div id="ass5" style="background-color: white;"></div>
+                     </div>
+                      <div id="ss3" style="background-color: yellow;"></div>
+                   </div>
+                    <div id="ay3"></div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

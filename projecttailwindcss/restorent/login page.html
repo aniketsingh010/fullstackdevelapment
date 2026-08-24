@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.css" rel="stylesheet" /> 
+</head>
+<body>
+
+
+  <div class="w-full">
+        <!-- nabar start -->
+        <div class="grid grid-cols-12">
+            <div class="col-span-12">
+
+
+                <nav class="bg-yellow-300 fixed w-full z-20 top-0 start-0 border-b border-default">
+                    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+                        <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+                            <img src="./images/images/1.png" class="h-10" alt="vinegar">
+                            <span class="self-center text-xl text-heading font-semibold whitespace-nowrap">Jaggery
+                                store</span>
+                        </a>
+                        <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+                            <button type="button"
+                                class="text-white  rounded-xl bg-black -600 hover:bg-brand-strong box-border border border-transparent focus:ring-4 focus:ring-brand-medium shadow-xs font-medium leading-5 rounded-base text-sm px-3 py-2  focus:outline-none">Get
+                                started</button>
+                            <button data-collapse-toggle="navbar-sticky" type="button"
+                                class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-body rounded-base md:hidden hover:bg-neutral-secondary-soft hover:text-heading focus:outline-none focus:ring-2 focus:ring-neutral-tertiary"
+                                aria-controls="navbar-sticky" aria-expanded="false">
+                                <span class="sr-only">Open main menu</span>
+                                <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24"
+                                    height="24" fill="none" viewBox="0 0 24 24">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-width="2"
+                                        d="M5 7h14M5 12h14M5 17h14" />
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+                            id="navbar-sticky">
+                            <ul
+                                class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-default rounded-base bg-neutral-secondary-soft md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-neutral-primary">
+                                <li>
+                                    <a href="index.html"
+                                        class="block  py-2 px-3 text-black  text-xl bg-brand rounded-sm md:bg-transparent md:text-fg-brand md:p-0 "
+                                        aria-current="page">Home</a>
+                                </li>
+                                <li>
+                                    <a href="about.html"
+                                        class="block py-2 px-3 text-xl text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">About</a>
+                                </li>
+                                <li>
+                                    <a href="contactpage.html"
+                                        class="block py-2 px-3 text-xl text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">cotact</a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="block py-2 px-3 text-xl text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+
+
+            </div>
+        </div>
+        <!-- navbar end -->
+
+  <div class="w-full max-w-md bg-gray-800 rounded-lg shadow-lg p-8 mt-40 ms-90">
+    <!-- Logo -->
+    <div class="flex items-center justify-center mb-6">
+      <span class="text-3xl font-bold text-orange-500">SP</span>
+      <span class="ml-2 text-white text-xl font-semibold">SoftproInnovation</span>
+    </div>
+
+    <!-- Heading -->
+    <h2 class="text-2xl font-bold text-white mb-2">Welcome back</h2>
+    <p class="text-gray-400 mb-6">Sign in to your account to continue shopping</p>
+
+    <!-- Form -->
+    <form action="#" method="POST" class="space-y-4">
+      <div>
+        <label class="block text-gray-300">Email Address</label>
+        <input type="email" placeholder="you@example.com"
+               class="w-full p-2 rounded-lg border border-gray-600 bg-gray-700 text-white focus:outline-none focus:border-orange-500">
+      </div>
+      <div>
+        <label class="block text-gray-300">Password</label>
+        <input type="password" placeholder="Your password"
+               class="w-full p-2 rounded-lg border border-gray-600 bg-gray-700 text-white focus:outline-none focus:border-orange-500">
+      </div>
+
+      <!-- Remember + Forgot -->
+      <div class="flex items-center justify-between text-gray-400 text-sm">
+        <label class="flex items-center">
+          <input type="checkbox" class="mr-2">
+          Remember me
+        </label>
+        <a href="#" class="text-orange-500 hover:underline">Forgot password?</a>
+      </div>
+
+      <!-- Sign In Button -->
+      <button type="submit"
+              class="w-full bg-orange-500 text-white font-bold py-2 px-4 rounded-lg hover:bg-orange-600 transition-colors">
+        Sign In
+      </button>
+    </form>
+
+    <!-- Create Account -->
+    <p class="text-gray-400 text-sm mt-4">
+      Don’t have an account?
+      <a href="#" class="text-orange-500 hover:underline">Create one free →</a>
+    </p>
+
+    <!-- Terms -->
+    <p class="text-gray-500 text-xs mt-6">
+      By signing in you agree to our
+      <a href="#" class="text-orange-400 hover:underline">Terms of Service</a>
+      and
+      <a href="#" class="text-orange-400 hover:underline">Privacy Policy</a>.
+    </p>
+  </div>
+      <!-- footer start -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <!-- Footer Section -->
+    <footer class="relative bg-gray-900 text-white pt-16  mt-20 pb-8">
+        <!-- Wave SVG background -->
+        <div class="absolute -top-12 left-0 w-full h-12"
+            style="background-image: url('data:image/svg+xml;utf8,<svg viewBox=...'); background-size: cover;"></div>
+
+        <div class="max-w-7xl mx-auto px-5 grid grid-cols-[repeat(auto-fit,minmax(250px,1fr))] gap-10 relative z-10">
+            <!-- About -->
+            <div>
+                <h2 class="text-2xl font-bold text-pink-600 mb-4">Brand Name Or Logo</h2>
+                <p class="mb-4 leading-relaxed opacity-90">Your premier destination for creative expression and
+                    professional production in the heart of Lucknow. We provide fully-equipped spaces for artists,
+                    creators, and businesses.</p>
+                <!-- Social Links -->
+                <div class="flex space-x-3">
+                    <a href="#"
+                        class="w-10 h-10 bg-white bg-opacity-10 flex items-center justify-center rounded-full text-white transition-transform hover:-translate-y-1 hover:bg-pink-600">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#"
+                        class="w-10 h-10 bg-white bg-opacity-10 flex items-center justify-center rounded-full text-white transition-transform hover:-translate-y-1 hover:bg-pink-600">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#"
+                        class="w-10 h-10 bg-white bg-opacity-10 flex items-center justify-center rounded-full text-white transition-transform hover:-translate-y-1 hover:bg-pink-600">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#"
+                        class="w-10 h-10 bg-white bg-opacity-10 flex items-center justify-center rounded-full text-white transition-transform hover:-translate-y-1 hover:bg-pink-600">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div>
+                <h3 class="text-xl text-pink-600 mb-6 border-b-2 border-pink-600 pb-2">Quick Links</h3>
+                <ul class="space-y-3">
+                    <li><a href="#"
+                            class="flex items-center gap-2 opacity-90 hover:opacity-100 hover:translate-x-1 transition"><i
+                                class="fas fa-chevron-right text-pink-600"></i> Home</a></li>
+                    <li><a href="#"
+                            class="flex items-center gap-2 opacity-90 hover:opacity-100 hover:translate-x-1 transition"><i
+                                class="fas fa-chevron-right text-pink-600"></i> About Us</a></li>
+                    <li><a href="#"
+                            class="flex items-center gap-2 opacity-90 hover:opacity-100 hover:translate-x-1 transition"><i
+                                class="fas fa-chevron-right text-pink-600"></i> Services</a></li>
+                    <li><a href="#"
+                            class="flex items-center gap-2 opacity-90 hover:opacity-100 hover:translate-x-1 transition"><i
+                                class="fas fa-chevron-right text-pink-600"></i> Events</a></li>
+                    <li><a href="#"
+                            class="flex items-center gap-2 opacity-90 hover:opacity-100 hover:translate-x-1 transition"><i
+                                class="fas fa-chevron-right text-pink-600"></i> Gallery</a></li>
+                </ul>
+            </div>
+
+            <!-- Our Services -->
+            <div>
+                <h3 class="text-xl text-pink-600 mb-6 border-b-2 border-pink-600 pb-2">Our Services</h3>
+                <ul class="space-y-3">
+                    <li><a href="#"
+                            class="flex items-center gap-2 opacity-90 hover:opacity-100 hover:translate-x-1 transition"><i
+                                class="fas fa-chevron-right text-pink-600"></i> Recording Studio</a></li>
+                    <li><a href="#"
+                            class="flex items-center gap-2 opacity-90 hover:opacity-100 hover:translate-x-1 transition"><i
+                                class="fas fa-chevron-right text-pink-600"></i> Theatre Room</a></li>
+                    <li><a href="#"
+                            class="flex items-center gap-2 opacity-90 hover:opacity-100 hover:translate-x-1 transition"><i
+                                class="fas fa-chevron-right text-pink-600"></i> Workshop Space</a></li>
+                    <li><a href="#"
+                            class="flex items-center gap-2 opacity-90 hover:opacity-100 hover:translate-x-1 transition"><i
+                                class="fas fa-chevron-right text-pink-600"></i> Photoshoot Studio</a></li>
+                    <li><a href="#"
+                            class="flex items-center gap-2 opacity-90 hover:opacity-100 hover:translate-x-1 transition"><i
+                                class="fas fa-chevron-right text-pink-600"></i> Event Hosting</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Us -->
+            <div>
+                <h3 class="text-xl text-pink-600 mb-6 border-b-2 border-pink-600 pb-2">Contact Us</h3>
+                <ul class="space-y-4 mb-6">
+                    <li class="flex items-start gap-4">
+                        <i class="fas fa-map-marker-alt text-pink-600 mt-1"></i>
+                        <div>
+                            India
+                        </div>
+                    </li>
+                    <li class="flex items-start gap-4">
+                        <i class="fas fa-phone-alt text-pink-600 mt-1"></i>
+                        <div>
+                            <a href="tel:+91987654321" class="block hover:underline opacity-90 hover:opacity-100">+91
+                                7307022824</a>
+
+                        </div>
+                    </li>
+                    <li class="flex items-start gap-4">
+                        <i class="fas fa-envelope text-pink-600 mt-1"></i>
+                        <div>
+                            <a href="mailto:kuldeepprajapati2111@gmail.com"
+                                class="block hover:underline opacity-90 hover:opacity-100">kuldeepprajapati2111@gmail.com</a>
+                        </div>
+                    </li>
+                </ul>
+
+                <!-- Newsletter -->
+                <h3 class="text-xl text-pink-600 mb-2 border-b-2 border-pink-600 pb-2">Newsletter</h3>
+                <p class="mb-4 opacity-70">Subscribe to get updates on our latest events and offers.</p>
+                <form class="flex">
+                    <input type="email" placeholder="Your Email" required
+                        class="flex-1 p-3 rounded-l-md focus:outline-none" />
+                    <button type="submit" class="bg-pink-600 hover:bg-pink-500 text-white p-3 rounded-r-md transition">
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="mt-16 pt-8 border-t border-gray-700 text-center opacity-70 text-sm">
+            <p>© 2024 Tab Creative Studio. All Rights Reserved. | Designed with <i
+                    class="fas fa-heart text-pink-600"></i> by Your Team</p>
+        </div>
+    </footer>
+    <!-- footer end --> 
+      <script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.js"></script> 
+</body>
+</html>
